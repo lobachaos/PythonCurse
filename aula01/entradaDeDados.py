@@ -6,4 +6,4 @@ anoAtual = input("Em que ano estamos ? ")
 
 anoNascimento = int(anoAtual) - int(idade) # Cast do tipo String para Int
 
-print(f"{nome} tem {idade} anos e nasceu no ano {anoNascimento}")
+print(f"{nome} tem {idade} anos e nasceu no  ano {anoNascimento}")
