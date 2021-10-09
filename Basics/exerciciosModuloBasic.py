@@ -4,7 +4,7 @@ Caso o usuário não digite um número inteiro , informe que não é um numero i
 """
 
 """
-Faça um programa que pergunta a hora ao usuário e , baseando-se no horário descritoi , exiba a saudação apropriada
+Faça um programa que pergunta a hora ao usuário e , baseando-se no horário descrito , exiba a saudação apropriada
 Ex : Bom dia -> 0-11 , Boa Tarde -> 12-17 e Boa noite -> 18-23
 """
 """
@@ -24,3 +24,29 @@ if num.isnumeric():
         print("Número IMPAR")
 else:
     print("Número invalido")
+
+# Second Program
+
+num2 = input("Que Horas São ? ")
+
+num2formatado = num2.replace(':', '')
+if num2formatado.isnumeric():
+    num2formatado = int(num2formatado)
+    if 0 <= num2formatado <= 1100:
+        print("Bom dia")
+    elif 1100 <= num2formatado <= 1700:
+        print("Boa tarde")
+    else:
+        print("Boa noite")
+else:
+    print("Numero invalido ")
+
+# Three Program
+
+nome = input("Qual é seu primeiro nome ? ")
+if len(nome) <= 4:
+    print("O seu nome é curto")
+elif 5 <= len(nome) <= 6:
+    print("Seu nome é normal")
+else:
+    print("Seu nome é muito grande")
