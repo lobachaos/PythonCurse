@@ -37,7 +37,6 @@ while not revelado and tentativas != 0:
             secreto_temp += letra_secreta
         else:
             secreto_temp += '*'
-    print(secreto_temp)
 
     if secreto_temp == secreto:
         revelado = True
