@@ -13,5 +13,6 @@ nova_string = '*'.join(lista)
 
 print(nova_string)
 
+# Enumerate gera tuplas
 for indice, valor in enumerate(lista):
     print(indice, valor, lista[indice])
